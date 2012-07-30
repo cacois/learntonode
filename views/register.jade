@@ -1,0 +1,30 @@
+div.copy Just provide a small amount of information to register:
+  p
+  form(action="/register", method="post")
+    div
+      label Email Address:
+      br
+      input( type="text", name="email")
+      br
+    div
+      label Password:
+      br
+      input(type="password", name="password")
+    div
+      label Confirm Password:
+      br
+      input(type="password", name="password_conf")
+    p
+    div (Optional) Provide the following information so we can give you credit for content you submit!
+      p
+      label Twitter ID:
+      br
+      input( type="text", name="twitterid")
+      br
+      label Github Account:
+      br
+      input( type="text", name="githubid")
+      br
+    div
+      p
+      input(type="submit", value="Submit")

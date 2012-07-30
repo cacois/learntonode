@@ -1,0 +1,16 @@
+//if message
+//  p message
+
+div.copy Please log in:
+  p
+  form(action="/login", method="post")
+    div
+      label Username:
+      input( type="text", name="username")
+      br
+    div
+      label Password:
+      input(type="password", name="password")
+    p
+    div
+      input(type="submit", value="Submit")

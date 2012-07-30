@@ -1,0 +1,22 @@
+{
+  "name": "learntonode.com",
+  "subdomain": "learntonode",
+  "domains": [
+    "learntonode.com",
+    "www.learntonode.com"
+  ],
+  "scripts": {
+    "start": "app.js"
+  },
+  "version": "0.5.0-6",
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {
+    "express": "2.5.1",
+    "jade": ">= 0.0.1",
+    "passport": "0.1.x",
+    "passport-local": "0.1.x",
+    "mongoose": "2.7.x"
+  }
+}
