@@ -20,6 +20,19 @@ module.exports = {
     // implement me
   }
 
+  new: function(email, name, password, twitterid, githubid) {
+    return new User(email, name, password, twitterid, githubid)
+  }
+}
+
+var crypto = require('utils/crypto.js')
+
+function User(email,name,password,twitterid, githubid) {
+  this.email = email;
+  this.name = name;
+  this.password = crypto.sha1(password);
+  this.twitterid = twitterid;
+  this.githubid = githubid;
 }
 
 /* Data Model
